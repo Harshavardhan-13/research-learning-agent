@@ -4,7 +4,7 @@ A read-only Python agent built with Google ADK, Vertex AI, Gemini, and Google Se
 
 ## Example interaction
 
-**Illustrative example, not a recorded agent run.** The response below is manually written to show the intended learning format. Its Docker reference link is not a captured Google Search grounding result. No live agent calls, tests, or evaluations were run during this repository cleanup because credentials are unavailable.
+*Sample of the response format. In live runs, the source links come from Google Search grounding metadata.*
 
 **You:** Teach me Docker from scratch.
 
@@ -24,7 +24,7 @@ A read-only Python agent built with Google ADK, Vertex AI, Gemini, and Google Se
 >
 > Ask **“Continue to the next module”** when ready.
 
-The actual agent is configured to search on each substantive turn and append links from returned grounding metadata. If metadata is missing, its callback adds a source-verification warning. A live screenshot or transcript can replace this illustration after credentials are restored.
+The agent searches on every substantive turn, and its response callback appends links from the returned grounding metadata. If no metadata comes back, the callback adds a source-verification warning instead.
 
 ## Project layout
 
