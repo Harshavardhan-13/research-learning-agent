@@ -1,0 +1,96 @@
+{
+  "eval_set_id": "personal_research_agent_learning_workflow",
+  "name": "Personal research agent learning workflow",
+  "description": "Checks first-module teaching and current-session continuation.",
+  "eval_cases": [
+    {
+      "eval_id": "kubernetes_from_scratch",
+      "conversation": [
+        {
+          "invocation_id": "3da96260-5b03-4b28-9c4d-bb306a53ac42",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Teach me Kubernetes from scratch."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Start with basic containers and command-line skills. Roadmap: containers, Kubernetes architecture, workloads, networking, storage, security, and operations. Module 1 explains containers and why Kubernetes manages them. Practice by running one container and inspecting it. Use the official Kubernetes Concepts and Docker Get Started guides. Ask for module 2 when ready."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "research_agent",
+        "user_id": "owner",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "continue_to_next_module",
+      "conversation": [
+        {
+          "invocation_id": "c52c411c-f91c-47aa-98c2-c132832af62e",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Teach me Git from scratch."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The roadmap covers snapshots, commits, branches, remotes, and collaboration. Module 1 teaches repositories and snapshots with an official Git reference, a small local inspection exercise, and an invitation to ask for module 2."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        },
+        {
+          "invocation_id": "0d302909-e12d-450f-a539-dcda39cf9f07",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Continue to the next module."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Module 2 teaches commits only, using plain language, direct official links, and a small commit exercise. It does not repeat module 1 or teach later modules, and it ends by inviting the user to request module 3."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "research_agent",
+        "user_id": "owner",
+        "state": {}
+      }
+    }
+  ]
+}

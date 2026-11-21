@@ -1,0 +1,9 @@
+{
+  "display_name": "Personal Research Learning Agent",
+  "description": "Read-only learning agent grounded with Google Search.",
+  "env_vars": {
+    "GOOGLE_GENAI_USE_ENTERPRISE": "TRUE",
+    "RESEARCH_AGENT_MODEL": "gemini-3.1-pro-preview",
+    "RESEARCH_AGENT_LOG_LEVEL": "INFO"
+  }
+}

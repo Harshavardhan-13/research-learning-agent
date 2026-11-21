@@ -1,0 +1,47 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*service-account*.json
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ADK local state and generated reports
+.adk/
+*.session.json
+eval_results/
+
+# Agent Runtime deployment staging
+agent_engine_deploy_src/
+
+# R history files
+.Rhistory
+.RData
+
+# Build prompts and local credential/session artifacts
+/structure.md
+*service_account*.json
+credentials.json
+application_default_credentials.json
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/

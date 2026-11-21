@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "rubric_based_final_response_quality_v1": {
+      "threshold": 0.8,
+      "judge_model_options": {
+        "judge_model": "gemini-3.1-pro-preview",
+        "num_samples": 1
+      },
+      "rubrics": [
+        {
+          "rubric_id": "grounded_sources",
+          "rubric_content": {
+            "text_property": "The response contains direct links to trustworthy sources and briefly explains why those sources are reliable."
+          }
+        },
+        {
+          "rubric_id": "ordered_learning_path",
+          "rubric_content": {
+            "text_property": "The response identifies prerequisites and gives a short ordered learning roadmap."
+          }
+        },
+        {
+          "rubric_id": "one_module_only",
+          "rubric_content": {
+            "text_property": "The response teaches only the first not-yet-completed module and does not explain later modules."
+          }
+        },
+        {
+          "rubric_id": "practice_and_progression",
+          "rubric_content": {
+            "text_property": "The response includes a small practice task and tells the user how to request the next module."
+          }
+        },
+        {
+          "rubric_id": "brief_plain_english",
+          "rubric_content": {
+            "text_property": "The complete response uses casual, plain English and contains no more than 300 words."
+          }
+        }
+      ]
+    }
+  }
+}
